@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UIbuilder Test File</title>
+	<link rel="stylesheet" href="CSS/UIbuilder.css">
+	<script src="Scripts/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="Scripts/knockout-3.1.0.js"></script>
+	<script src="Scripts/UIbuilder.js"></script>
+</head>
+<body>
+<div id="grid"></div>
+<script>
+$(document).ready(function() {
+	var model = {
+		Id : 1,
+		Name : 'John',
+		Description : 'tired'
+	};
+	
+	UIbuilder(model).grid('grid');
+});
+</script>
+</body>
+</html>
